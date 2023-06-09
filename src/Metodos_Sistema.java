@@ -1,4 +1,5 @@
 public class Metodos_Sistema {
+
     //Variables-atributos
     private float lado; //Usar para calcular perimetros de bases como cubo, trapecio, piramide
     private float altura; // usar para calcular piramides y cilindro
@@ -13,4 +14,21 @@ public class Metodos_Sistema {
         this.radio = radio;
     }
     //Getters and Setters
+    public float getLado() {
+        return lado;
+    }
+
+    public void setLado(float lado) {
+        this.lado = lado;
+    }
+    public float perimetro_cubo(float lado){
+        return 12*this.lado;
+    }
+    public float area_cubo(float lado){
+        return 6*(this.lado*this.lado);
+    }
+    public float volumen_cubo(float lado){
+        return this.lado*this.lado*this.lado;
+    }
+
 }
