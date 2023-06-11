@@ -7,6 +7,7 @@ public class Metodos_Sistema {
     private float area;
     private float perimtero;
     private float volumen;
+    private float pi = 3.14f;
 
     public Metodos_Sistema(float lado, float altura, float radio) {
         this.lado = lado;
@@ -46,4 +47,5 @@ public class Metodos_Sistema {
     public void setRadio(float radio) {
         this.radio = radio;
     }
+    public float area_cilindro(float radio, float altura) { return 2*(this.pi * this.radio) * (this.radio + this.altura);}
 }

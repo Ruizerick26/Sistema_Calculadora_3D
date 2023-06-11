@@ -31,7 +31,7 @@ public class Menu_Sistema {
                     System.out.println("Ingrese el valor del radio del cilindro: ");
                     float radio = tomar.nextFloat();
                     cilindro.setRadio(radio);
-
+                    System.out.println("Area del cilindro: " + cilindro.area_cilindro(cilindro.getRadio(),cilindro.getAltura()));
                     break;
                 case 4:
                     System.out.println("ESFERA");
