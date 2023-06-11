@@ -31,4 +31,19 @@ public class Metodos_Sistema {
         return this.lado*this.lado*this.lado;
     }
 
+    public float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public float getRadio() {
+        return radio;
+    }
+
+    public void setRadio(float radio) {
+        this.radio = radio;
+    }
 }

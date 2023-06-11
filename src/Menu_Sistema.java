@@ -24,6 +24,14 @@ public class Menu_Sistema {
                     break;
                 case 3:
                     System.out.println("CILINDRO");
+                    Metodos_Sistema cilindro = new Metodos_Sistema(0,0,0);
+                    System.out.println("Ingrese el valor del altura del cilindro: ");
+                    float altura = tomar.nextFloat();
+                    cilindro.setAltura(altura);
+                    System.out.println("Ingrese el valor del radio del cilindro: ");
+                    float radio = tomar.nextFloat();
+                    cilindro.setRadio(radio);
+
                     break;
                 case 4:
                     System.out.println("ESFERA");
