@@ -48,4 +48,12 @@ public class Metodos_Sistema {
         this.radio = radio;
     }
     public float area_cilindro(float radio, float altura) { return 2*(this.pi * this.radio) * (this.radio + this.altura);}
+
+    public float getVolumen() {
+        return volumen;
+    }
+
+    public void setVolumen(float volumen) {
+        this.volumen = volumen;
+    }
 }
