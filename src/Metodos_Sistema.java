@@ -8,11 +8,13 @@ public class Metodos_Sistema {
     private float perimtero;
     private float volumen;
     private float pi = 3.14f;
+    private double areaSuperficial;
 
-    public Metodos_Sistema(float lado, float altura, float radio) {
+    public Metodos_Sistema(float lado, float altura, float radio, float areaSuperficial) {
         this.lado = lado;
         this.altura = altura;
         this.radio = radio;
+        this.areaSuperficial=areaSuperficial;
     }
     //Getters and Setters
     public float getLado() {
@@ -55,5 +57,18 @@ public class Metodos_Sistema {
 
     private void setVolumen(float volumen) {
         this.volumen = volumen;
+    }
+    //Metodos-Esfera Jared
+    public void calcularAreaSuperficial(){
+        areaSuperficial = 4 * Math.PI * Math.pow(this.radio, 2);
+    }
+    public void calcularVolumen(){
+        volumen = (float) ((4 * Math.PI * Math.pow(this.radio,3))/3);
+    }
+    public double getVolumen() {
+        return volumen;
+    }
+    public double getAreaSuperficial() {
+        return areaSuperficial;
     }
 }
