@@ -21,7 +21,21 @@ public class Menu_Sistema {
                     break;
                 case 2:
                     System.out.println("PIRAMIDE");
+                    Metodos_Sistema piramide = new Metodos_Sistema(0,0,0,0,0,0,0);
+                    System.out.println("Ingrese el valor de un lado de la piramide: ");
+                    float lado = tomar.nextFloat();
+                    piramide.setLado(lado);
+                    System.out.println("Ingrese el valor de la altura: ");
+                    float altura = tomar.nextFloat();
+                    piramide.setAltura(altura);
+                    System.out.println("Ingrese el valor del radio: ");
+                    float radio = tomar.nextFloat();
+                    piramide.setRadio(radio);
+                    System.out.println("Area de base: " + piramide.getArea_base(piramide.getRadio(),piramide.getAltura()));
+                    System.out.println("Perimetro: " +  piramide.getPerimtero_base(piramide.getLado(),piramide.getAltura()));
+                    System.out.println("Area superficial: "+ piramide.getAreaSuperficial(piramide.getArea(), piramide.getAltura()));
                     break;
+
                 case 3:
                     System.out.println("CILINDRO");
                     Metodos_Sistema cilindro = new Metodos_Sistema(0,0,0,0,0,0,0);
