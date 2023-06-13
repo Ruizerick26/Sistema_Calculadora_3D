@@ -9,7 +9,7 @@ public class Menu_Sistema {
         while (opcion!=5){
             switch (opcion) {
                 case 1:
-                    //Siguir este case para el resto
+                    //Seguir este case para el resto
                     System.out.println("CUBO");
                     Metodos_Sistema cubo = new Metodos_Sistema(4, 8, 9);
                     System.out.println("Ingrese el valor de un lado del cubo");
@@ -36,6 +36,15 @@ public class Menu_Sistema {
                     break;
                 case 4:
                     System.out.println("ESFERA");
+                    Metodos_Sistema esfera = new Metodos_Sistema(0,0,0,0);
+                    System.out.println("Ingrése el valor de  altura: ");
+                    float altura = tomar.nextFloat();
+                    esfera.setAltura(altura);
+                    System.out.println("Ingrese el valor del radio");
+                    float radio = tomar.nextFloat();
+                    esfera.setRadio(radio);
+                    System.out.println("Área Superfial: " + esfera.getAreaSuperficial(esfera.getRadio(),esfera.getAltura()));
+                    System.out.println("Volumen de esfera " + esfera.getVolumen(esfera.getRadio(),esfera.getAltura()));
                     break;
 
             }

@@ -69,6 +69,6 @@ public class Metodos_Sistema {
         return volumen;
     }
     public double getAreaSuperficial() {
-        return areaSuperficial;
+        return areaSuperficial ;
     }
 }
