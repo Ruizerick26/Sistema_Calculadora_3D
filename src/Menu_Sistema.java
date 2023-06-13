@@ -21,6 +21,15 @@ public class Menu_Sistema {
                     break;
                 case 2:
                     System.out.println("PIRAMIDE");
+                    Metodos_Sistema piramide = new Metodos_Sistema(0,0,0,0,0,0,0);
+                    System.out.println("Ingrese el valor de un lado de la piramide");
+                    float lado = tomar.nextFloat();
+                    piramide.setLado(lado);
+                    System.out.println("Area de la piramide"+ piramide.getArea_base(piramide.getLado()));
+                    System.out.println("Perimetro de la piramide" + piramide.getPerimtero_base(piramide.getLado()));
+                    System.out.println("Volumen de la piramide" + piramide.getVolumenP(piramide.getArea()));
+
+
                     break;
                 case 3:
                     System.out.println("CILINDRO");
@@ -36,6 +45,22 @@ public class Menu_Sistema {
                     break;
                 case 4:
                     System.out.println("ESFERA");
+                    Metodos_Sistema esfera = new Metodos_Sistema(0,0,0,0,0,0,0);
+                    System.out.println("Ingrese el número de lados: ");
+                    float lados = tomar.nextFloat();
+                    esfera.setLado(lados);
+
+                    System.out.println("Ingrese el valor de altura: ");
+                    float altura = tomar.nextFloat();
+                    esfera.setAltura(altura);
+
+                    System.out.println("Ingrese el valor de radio");
+                    float radio = tomar.nextFloat();
+                    esfera.setRadio(radio);
+                    System.out.println("Perimetro"+ esfera.perimetro_cubo(esfera.getLado());
+                    System.out.println("Apotema" + esfera.apotema(esfera.getRadio(),esfera.getAltura()););
+                    System.out.println("Area superficial" + esfera.getAreaSuperficial(esfera.getAreaSuperficial()));
+
                     break;
 
             }
