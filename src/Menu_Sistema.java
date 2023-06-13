@@ -21,6 +21,23 @@ public class Menu_Sistema {
                     break;
                 case 2:
                     System.out.println("PIRAMIDE");
+                    Metodos_Sistema piramide = new Metodos_Sistema(0,0,0,0,0,0,0);
+                    float area_base, perimetro_base, apotema, alturaP;
+                    System.out.print("Ingrese el valor del área de la base de la pirámide: ");
+                    area_base=tomar.nextFloat();
+                    piramide.setArea_base(area_base);
+                    System.out.print("Ingrese el valor del perímetro de la base: ");
+                    perimetro_base=tomar.nextFloat();
+                    piramide.setPerimetro_base(perimetro_base);
+                    System.out.print("Ingrese el valor de la apotema (altura inclinada de las caras triangulares): ");
+                    apotema= tomar.nextFloat();
+                    piramide.setApotema(apotema);
+                    System.out.print("Ingrese el valor de la altura de la piramide: ");
+                    alturaP= tomar.nextFloat();
+                    piramide.setAltura(alturaP);
+
+                    System.out.println("\nEl área de la pirámide es: "+piramide.getAreaP());
+                    System.out.println("El volumen de la pirámide es: "+piramide.getVolumenP());
                     break;
                 case 3:
                     System.out.println("CILINDRO");
