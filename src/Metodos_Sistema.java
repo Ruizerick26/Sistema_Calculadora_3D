@@ -21,10 +21,7 @@ public class Metodos_Sistema {
         this.areaSuperficial=areaSuperficial;
     }
     //Getters and Setters
-    public float getLado() {
-        return lado;
-    }
-
+    public float getLado() {return lado;}
     public void setLado(float lado) {
         this.lado = lado;
     }
@@ -37,24 +34,19 @@ public class Metodos_Sistema {
     public float volumen_cubo(float lado){
         return this.lado*this.lado*this.lado;
     }
-
-    public float getArea_base() {return area_base;}
-    public void setArea_base(float area_base) {this.area_base = area_base;}
-    public float getPerimtero_base() {return perimtero_base;}
-    public void setPerimtero_base(float perimtero_base) {this.perimtero_base = perimtero_base;}
     public float getApotema() {return apotema;}
     public void setApotema(float apotema) {this.apotema = apotema;}
 
-    private float calcularAreaP(){return area_base+((perimtero_base*apotema)/2);}
-    public float getArea(){
-        return calcularAreaP();
+    private float calcularAreaP(float lado,float apotema){return (lado*lado)+((lado*apotema)/2);}
+    public float getArea(float lado,float apotema){
+        return calcularAreaP(lado,apotema);
     }
 
-    private double calcularVolumenP(){
-        return 0.3333*area_base*altura;
+    private double calcularVolumenP(float lado,float altura){
+        return 0.3333*(lado*lado)*altura;
     }
 
-    public double getVolumenP(){return calcularVolumenP();}
+    public double getVolumenP(float lado,float altura){return calcularVolumenP(lado,altura);}
 
     public float getAltura() {
         return altura;
@@ -72,26 +64,24 @@ public class Metodos_Sistema {
         this.radio = radio;
     }
     public float area_cilindro(float radio, float altura) { return 2*(this.pi * this.radio) * (this.radio + this.altura);}
-
     public float getVolumen(float radio, float altura) {
         return this.pi * this.radio * this.radio * this.altura;
     }
-
     private void setVolumen(float volumen) {
         this.volumen = volumen;
     }
     //Metodos-Esfera Jared
-    public void calcularAreaSuperficial(){
-        areaSuperficial = 4 * Math.PI * Math.pow(this.radio, 2);
+    public double calcularAreaSuperficial(float radio){
+        return 4 * Math.PI * Math.pow(this.radio, 2);
     }
-    public void calcularVolumen(){
-        volumen = (float) ((4 * Math.PI * Math.pow(this.radio,3))/3);
+    public double calcularVolumen(float radio){
+        return (float) ((4 * Math.PI * Math.pow(this.radio,3))/3);
     }
-    public double getVolumen() {
-        return volumen;
+    public double getVolumen(float radio) {
+        return calcularVolumen(radio);
     }
-    public double getAreaSuperficial() {
-        return areaSuperficial;
+    public double getAreaSuperficial(float radio) {
+        return calcularAreaSuperficial(radio);
     }
 
 
