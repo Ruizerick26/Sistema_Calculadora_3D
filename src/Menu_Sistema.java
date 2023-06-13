@@ -11,7 +11,7 @@ public class Menu_Sistema {
                 case 1:
                     //Seguir este case para el resto
                     System.out.println("CUBO");
-                    Metodos_Sistema cubo = new Metodos_Sistema(4, 8, 9);
+                    Metodos_Sistema cubo = new Metodos_Sistema(0, 0, 0, 7, 8,9, 8);
                     System.out.println("Ingrese el valor de un lado del cubo");
                     float lado = tomar.nextFloat();
                     cubo.setLado(lado);
@@ -24,7 +24,7 @@ public class Menu_Sistema {
                     break;
                 case 3:
                     System.out.println("CILINDRO");
-                    Metodos_Sistema cilindro = new Metodos_Sistema(0,0,0);
+                    Metodos_Sistema cilindro = new Metodos_Sistema(0,0,0,0,0,0,0);
                     System.out.println("Ingrese el valor del altura del cilindro: ");
                     float altura = tomar.nextFloat();
                     cilindro.setAltura(altura);
