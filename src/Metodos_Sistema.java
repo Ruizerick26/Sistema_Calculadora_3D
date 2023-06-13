@@ -41,7 +41,7 @@ public class Metodos_Sistema {
     public float getArea_base() {return area_base;}
     public void setArea_base(float area_base) {this.area_base = area_base;}
     public float getPerimtero_base() {return perimtero_base;}
-    public void setPerimtero_base(float perimetro_base) {this.perimetro_base = perimtero_base;}
+    public void setPerimtero_base(float perimtero_base) {this.perimtero_base = perimtero_base;}
     public float getApotema() {return apotema;}
     public void setApotema(float apotema) {this.apotema = apotema;}
 
@@ -91,7 +91,7 @@ public class Metodos_Sistema {
         return volumen;
     }
     public double getAreaSuperficial() {
-        return areaSuperficial ;
+        return areaSuperficial;
     }
 
 
